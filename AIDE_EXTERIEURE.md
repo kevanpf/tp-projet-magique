@@ -1,0 +1,1 @@
+Je n'ai pas eu recours à l'IA. Je me suis simplement aidé des cours de la semaine et des exercices réalisés.
