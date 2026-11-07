@@ -10,15 +10,20 @@ int main(void)
 	printf("Choisissez un nombre entre 1 et 100 :\n");
 	scanf("%d", &number_user);
 
-	if (number_user > random_number)
+	while(number_user != random_number)
 	{
-		printf("C'est moins\n");
+		if (number_user > random_number)
+		{
+			printf("C'est moins\n");
+		}
+		else if (number_user < random_number)
+		{
+			printf("C'est plus\n");
+		}
+		printf("Choisissez un nombre entre 1 et 100 :\n");
+		scanf("%d", &number_user);
 	}
-	else if (number_user < random_number)
-	{
-		printf("C'est plus\n");
-	}
-	else if (number_user == random_number)
+	if(number_user == random_number)
 	{
 		printf("Bon numéro trouvé !!\n");
 	}
